@@ -1,0 +1,21 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Run CanteenEase Backend",
+			"type": "shell",
+			"command": "cd server && npm run dev",
+			"isBackground": true,
+			"problemMatcher": [],
+			"group": "build"
+		},
+		{
+			"label": "Run CanteenEase Frontend",
+			"type": "shell",
+			"command": "cd client && npm run dev -- --host 0.0.0.0",
+			"isBackground": true,
+			"problemMatcher": [],
+			"group": "build"
+		}
+	]
+}

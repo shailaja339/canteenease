@@ -1,0 +1,70 @@
+.admin-queue-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.queue-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.queue-column {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+  min-height: 400px;
+}
+
+.queue-column h3 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+}
+
+.preparing-column h3 {
+  color: #f59e0b; /* Amber */
+}
+
+.ready-column h3 {
+  color: #10b981; /* Green */
+}
+
+.token-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.queue-token {
+  font-size: 2.5rem;
+  font-weight: bold;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  color: white;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.token-preparing {
+  background: linear-gradient(135deg, #f59e0b, #d97706);
+}
+
+.token-ready {
+  background: linear-gradient(135deg, #10b981, #059669);
+  animation: pulse 2s infinite;
+}
+
+.empty-text {
+  color: #94a3b8;
+  font-size: 1.25rem;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}

@@ -1,0 +1,181 @@
+.order-details-page {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1.5rem 2rem;
+}
+
+.order-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.order-id {
+  background: #e2e8f0;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  font-family: monospace;
+  font-weight: bold;
+}
+
+.pickup-token-card {
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: white;
+  padding: 2.5rem;
+  text-align: center;
+  border-radius: 16px;
+  box-shadow: 0 15px 35px rgba(102, 126, 234, 0.35);
+  margin-bottom: 2rem;
+}
+
+.token-number {
+  font-size: 6rem;
+  font-weight: bold;
+  line-height: 1;
+  margin: 1rem 0;
+}
+
+.token-status {
+  font-size: 1.25rem;
+}
+
+.order-tracking {
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.tracking-progress {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+  position: relative;
+}
+
+.tracking-progress::before {
+  content: '';
+  position: absolute;
+  top: 20px;
+  left: 30px;
+  right: 30px;
+  height: 4px;
+  background: #e2e8f0;
+  z-index: 1;
+}
+
+.tracking-step {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  flex: 1;
+}
+
+.step-circle {
+  width: 40px;
+  height: 40px;
+  background: #e2e8f0;
+  border-radius: 50%;
+  margin: 0 auto 1rem auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: white;
+  transition: all 0.3s;
+}
+
+.tracking-step.active .step-circle {
+  background: #10b981; /* Green for completed steps */
+}
+
+.tracking-step.current .step-circle {
+  background: #3b82f6; /* Blue for current step */
+  box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.2);
+}
+
+.step-label {
+  font-size: 0.875rem;
+  color: #64748b;
+  font-weight: bold;
+}
+
+.tracking-step.active .step-label {
+  color: #0f172a;
+}
+
+.order-summary-details {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.order-summary-details ul {
+  list-style: none;
+  padding: 0;
+}
+
+.order-summary-details li {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.order-total {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1rem;
+  font-size: 1.25rem;
+}
+
+.order-rating-section {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin-top: 2rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.order-rating-item {
+  border-top: 1px solid #e2e8f0;
+  display: grid;
+  gap: 0.75rem;
+  margin-top: 1rem;
+  padding-top: 1rem;
+}
+
+.star-picker {
+  display: flex;
+  gap: 0.25rem;
+}
+
+.star-picker button {
+  background: transparent;
+  border: 0;
+  color: #cbd5e1;
+  cursor: pointer;
+  font-size: 1.8rem;
+  padding: 0;
+}
+
+.star-picker button.selected {
+  color: #d97706;
+}
+
+.order-rating-item textarea {
+  border: 1px solid #cbd5e1;
+  border-radius: 4px;
+  font: inherit;
+  padding: 0.75rem;
+  resize: vertical;
+}
+
+.rating-message,
+.rating-submitted {
+  color: #166534;
+  font-weight: 600;
+}
