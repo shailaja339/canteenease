@@ -1,7 +1,9 @@
 import axios from 'axios';
 
+const backendUrl = (import.meta.env.VITE_API_URL || 'https://canteenease-backend.vercel.app').replace(/\/$/, '');
+
 const api = axios.create({
-  baseURL: 'http://localhost:5000/api', // adjust if port is different
+  baseURL: `${backendUrl}/api`,
   headers: {
     'Content-Type': 'application/json',
   },
